@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ChatGPT Clone — AI Chat</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="ChatGPT clone by Sathish (@sathish099) — AI chat interface built with HTML/CSS/JS and OpenAI API" />
+</head>
+<body>
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">💬 ChatGPT Clone</div>
+        <button class="new-chat-btn" id="newChatBtn" aria-label="New chat">+ New Chat</button>
+      </div>
+      <nav class="chat-history" id="chatHistory">
+        <p class="empty-state">No chat history yet</p>
+      </nav>
+      <div class="sidebar-footer">
+        <button class="clear-history-btn" id="clearHistoryBtn">Clear History</button>
+        <p class="credit"><small>Built by Sathish (@sathish099)</small></p>
+      </div>
+    </aside>
+
+    <main class="chat-area">
+      <header class="chat-header">
+        <h1>ChatGPT Clone</h1>
+        <p class="subtitle">Powered by OpenAI API</p>
+      </header>
+
+      <div class="messages-container" id="messagesContainer">
+        <div class="welcome-screen">
+          <h2>Start a conversation</h2>
+          <p>Ask me anything. I'll help you think through it.</p>
+          <div class="quick-prompts">
+            <button class="prompt-btn" data-prompt="Explain quantum computing in simple terms">Quantum Computing 101</button>
+            <button class="prompt-btn" data-prompt="Write a Python function to check if a number is prime">Prime Number Checker</button>
+            <button class="prompt-btn" data-prompt="How do I build a REST API?">Building REST APIs</button>
+            <button class="prompt-btn" data-prompt="Tips for better time management">Time Management Tips</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-area">
+        <form id="chatForm" onsubmit="return false;">
+          <div class="input-wrapper">
+            <textarea 
+              id="userInput" 
+              placeholder="Type your message... (Shift+Enter for new line, Enter to send)"
+              aria-label="Chat input"
+              rows="1"
+            ></textarea>
+            <button 
+              type="submit" 
+              id="sendBtn" 
+              class="send-btn" 
+              aria-label="Send message"
+            >
+              ➤
+            </button>
+          </div>
+          <p class="info-text">
+            <small id="apiStatus">⚠️ API key not configured. Add your OpenAI API key in config.js to enable chat.</small>
+          </p>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

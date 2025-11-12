@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YTube — YouTube-style Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">YTube</div>
+      </div>
+
+      <form class="search" role="search" onsubmit="return false;">
+        <input id="searchInput" placeholder="Search videos, channels or topics" />
+        <button id="searchBtn" aria-label="Search">Search</button>
+      </form>
+
+      <button class="hamburger" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#">Home</a>
+      <a href="#">Trending</a>
+      <a href="#">Subscriptions</a>
+      <a href="#">Library</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content container">
+        <h1>Watch. Share. Discover.</h1>
+        <p class="muted">A minimal YouTube-inspired landing page demo. Click a card to play a video.</p>
+
+        <div class="filters">
+          <select id="filterSelect">
+            <option value="">All</option>
+            <option value="music">Music</option>
+            <option value="tech">Tech</option>
+            <option value="food">Food</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="videos container">
+      <h2>Recommended videos</h2>
+      <div class="grid" id="cardsGrid">
+        <article class="video-card" data-keywords="music pop" data-category="music" data-video="dQw4w9WgXcQ">
+          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=60')">
+            <button class="play">▶</button>
+          </div>
+          <div class="meta">
+            <h3>Great Pop Hit</h3>
+            <p class="muted">Awesome Channel • 1.2M views • 2 days ago</p>
+          </div>
+        </article>
+
+        <article class="video-card" data-keywords="tech review" data-category="tech" data-video="3fumBcKC6RE">
+          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=800&q=60')">
+            <button class="play">▶</button>
+          </div>
+          <div class="meta">
+            <h3>Latest Tech Review</h3>
+            <p class="muted">Tech Guru • 850K views • 1 week ago</p>
+          </div>
+        </article>
+
+        <article class="video-card" data-keywords="food recipe" data-category="food" data-video="kJQP7kiw5Fk">
+          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=800&q=60')">
+            <button class="play">▶</button>
+          </div>
+          <div class="meta">
+            <h3>Delicious Recipes</h3>
+            <p class="muted">Chef's Table • 420K views • 3 days ago</p>
+          </div>
+        </article>
+
+        <article class="video-card" data-keywords="music indie" data-category="music" data-video="J---aiyznGQ">
+          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=60')">
+            <button class="play">▶</button>
+          </div>
+          <div class="meta">
+            <h3>Indie Vibes</h3>
+            <p class="muted">Indie Channel • 210K views • 1 month ago</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta container">
+      <p>📺 YTube — A YouTube-style landing page clone by Sathish (@sathish099)</p>
+      <p><a class="view-code" href="https://github.com/sathish099/sathish099.github.io/tree/main/projects/youtube" target="_blank" rel="noopener">View source on GitHub →</a></p>
+    </section>
+  </main>
+
+  <div id="videoModal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true">
+      <button id="modalClose" class="modal-close" aria-label="Close">✕</button>
+      <div class="video-wrap" id="videoWrap"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Sathish (@sathish099)</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zomoto — Food Delivery Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">Zomoto</div>
+      </div>
+
+      <form class="search" role="search" onsubmit="return false;">
+        <input id="searchInput" placeholder="Search for restaurants, cuisines or dishes" />
+        <button id="searchBtn" aria-label="Search">Search</button>
+      </form>
+
+      <button class="hamburger" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#">Home</a>
+      <a href="#">Orders</a>
+      <a href="#">Offers</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content container">
+        <h1>Discover the best food & restaurants near you</h1>
+        <p class="muted">Explore restaurants, read reviews and order delicious food.</p>
+        <div class="search-hero">
+          <input id="heroSearch" placeholder="Search for restaurants, e.g., Pizza, Chinese..." />
+          <button id="heroSearchBtn">Search</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories container">
+      <h2>Popular categories</h2>
+      <div class="chips">
+        <button class="chip">Pizza</button>
+        <button class="chip">Biryani</button>
+        <button class="chip">Sushi</button>
+        <button class="chip">Desserts</button>
+        <button class="chip">Fast Food</button>
+      </div>
+    </section>
+
+    <section class="restaurants container">
+      <h2>Top restaurants</h2>
+      <div class="grid" id="cardsGrid">
+        <article class="card" data-keywords="pizza italian cheese">
+          <div class="thumb" style="background-image:linear-gradient(180deg,rgba(0,0,0,0.15),transparent), url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=60')"></div>
+          <div class="meta">
+            <h3>Royal Pizza</h3>
+            <p class="muted">Pizza • Italian • ₹300 for two</p>
+          </div>
+        </article>
+
+        <article class="card" data-keywords="biryani indian rice">
+          <div class="thumb" style="background-image:linear-gradient(180deg,rgba(0,0,0,0.15),transparent), url('https://images.unsplash.com/photo-1604908554025-8b1b488fbed6?auto=format&fit=crop&w=800&q=60')"></div>
+          <div class="meta">
+            <h3>Spice Biryani</h3>
+            <p class="muted">Biryani • Indian • ₹350 for two</p>
+          </div>
+        </article>
+
+        <article class="card" data-keywords="sushi japanese seafood">
+          <div class="thumb" style="background-image:linear-gradient(180deg,rgba(0,0,0,0.15),transparent), url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=60')"></div>
+          <div class="meta">
+            <h3>Ocean's Sushi</h3>
+            <p class="muted">Sushi • Japanese • ₹800 for two</p>
+          </div>
+        </article>
+
+        <article class="card" data-keywords="dessert cake icecream sweets">
+          <div class="thumb" style="background-image:linear-gradient(180deg,rgba(0,0,0,0.15),transparent), url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=60')"></div>
+          <div class="meta">
+            <h3>Sweet Treats</h3>
+            <p class="muted">Desserts • Bakery • ₹200 for two</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta container">
+      <p>🍕 Zomoto — A food delivery landing page clone by Sathish (@sathish099)</p>
+      <p><a class="view-code" href="https://github.com/sathish099/sathish099.github.io/tree/main/projects/zomoto" target="_blank" rel="noopener">View source on GitHub →</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Sathish (@sathish099)</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
