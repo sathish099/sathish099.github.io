@@ -19,13 +19,31 @@
             --gray: #64748b;
             --light: #f8fafc;
             --accent: #8b5cf6;
+            --bg-primary: #f8fafc;
+            --bg-secondary: #ffffff;
+            --text-primary: #0f172a;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: rgba(0,0,0,0.08);
+            --shadow-hover: rgba(0,0,0,0.15);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --border-color: #334155;
+            --shadow: rgba(0,0,0,0.3);
+            --shadow-hover: rgba(0,0,0,0.5);
         }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: var(--dark);
-            background: var(--light);
+            color: var(--text-primary);
+            background: var(--bg-primary);
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         .container {
@@ -94,23 +112,25 @@
         }
 
         nav {
-            background: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: var(--bg-secondary);
+            box-shadow: 0 2px 10px var(--shadow);
             position: sticky;
             top: 0;
             z-index: 100;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
         }
 
         nav ul {
             list-style: none;
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 40px;
             padding: 20px;
         }
 
         nav a {
-            color: var(--dark);
+            color: var(--text-primary);
             text-decoration: none;
             font-weight: 600;
             transition: color 0.3s ease;
@@ -144,7 +164,7 @@
             font-size: 2.5em;
             margin-bottom: 40px;
             text-align: center;
-            color: var(--dark);
+            color: var(--text-primary);
             position: relative;
             padding-bottom: 15px;
         }
@@ -162,14 +182,15 @@
         }
 
         .summary {
-            background: white;
+            background: var(--bg-secondary);
             padding: 40px;
             border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 20px var(--shadow);
             max-width: 900px;
             margin: 0 auto;
             font-size: 1.1em;
             line-height: 1.8;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
         }
 
         .skills-grid {
@@ -180,16 +201,16 @@
         }
 
         .skill-category {
-            background: white;
+            background: var(--bg-secondary);
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 20px var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
         }
 
         .skill-category:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 30px var(--shadow-hover);
         }
 
         .skill-category h3 {
@@ -200,13 +221,13 @@
 
         .skill-tag {
             display: inline-block;
-            background: var(--light);
+            background: var(--bg-primary);
             padding: 8px 15px;
             margin: 5px;
             border-radius: 20px;
             font-size: 0.9em;
-            color: var(--gray);
-            border: 2px solid #e2e8f0;
+            color: var(--text-secondary);
+            border: 2px solid var(--border-color);
             transition: all 0.3s ease;
         }
 
@@ -218,12 +239,13 @@
         }
 
         .experience-card {
-            background: white;
+            background: var(--bg-secondary);
             padding: 40px;
             border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 20px var(--shadow);
             margin-bottom: 30px;
             border-left: 5px solid var(--primary);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
         }
 
         .experience-header {
@@ -243,12 +265,12 @@
 
         .experience-company {
             font-size: 1.2em;
-            color: var(--gray);
+            color: var(--text-secondary);
             margin-bottom: 5px;
         }
 
         .experience-date {
-            color: var(--gray);
+            color: var(--text-secondary);
             font-style: italic;
         }
 
@@ -274,16 +296,16 @@
         }
 
         .project-card {
-            background: white;
+            background: var(--bg-secondary);
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 20px var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
         }
 
         .project-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 40px var(--shadow-hover);
         }
 
         .project-header {
@@ -321,12 +343,13 @@
         }
 
         .tech-badge {
-            background: var(--light);
+            background: var(--bg-primary);
             color: var(--primary);
             padding: 5px 12px;
             border-radius: 15px;
             font-size: 0.85em;
             font-weight: 600;
+            transition: background-color 0.3s ease;
         }
 
         .cta-section {
@@ -363,10 +386,38 @@
         }
 
         footer {
-            background: var(--dark);
-            color: white;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
             text-align: center;
             padding: 30px 20px;
+            border-top: 1px solid var(--border-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .theme-toggle {
+            background: var(--bg-primary);
+            border: 2px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .theme-toggle:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            transform: scale(1.05);
+        }
+
+        .theme-toggle:active {
+            transform: scale(0.95);
         }
 
         @keyframes fadeInUp {
@@ -426,6 +477,12 @@
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span id="themeIcon">🌙</span>
+                    <span id="themeText">Dark</span>
+                </button>
+            </li>
         </ul>
     </nav>
 
@@ -439,7 +496,7 @@
         </div>
     </section>
 
-    <section id="skills" style="background: white;">
+    <section id="skills" style="background: var(--bg-primary);">
         <div class="container">
             <h2>Technical Skills</h2>
             <div class="skills-grid">
@@ -525,7 +582,7 @@
         </div>
     </section>
 
-    <section id="projects" style="background: white;">
+    <section id="projects" style="background: var(--bg-primary);">
         <div class="container">
             <h2>Featured Projects</h2>
             <div class="project-grid">
@@ -592,6 +649,52 @@
     </footer>
 
     <script>
+        // Theme Management
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const themeText = document.getElementById('themeText');
+        const html = document.documentElement;
+
+        // Check for saved theme preference or default to system preference
+        const getPreferredTheme = () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                return savedTheme;
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        // Set theme
+        const setTheme = (theme) => {
+            html.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+            
+            if (theme === 'dark') {
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Light';
+            } else {
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Dark';
+            }
+        };
+
+        // Initialize theme
+        setTheme(getPreferredTheme());
+
+        // Toggle theme
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            setTheme(newTheme);
+        });
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                setTheme(e.matches ? 'dark' : 'light');
+            }
+        });
+
         // Smooth scrolling for navigation links
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
