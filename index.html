@@ -1,234 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description"
-    content="Portfolio of Sathish - Full Stack Developer specializing in AI, Web Technologies, and Modern UI/UX." />
-  <meta name="keywords"
-    content="Sathish, Full Stack Developer, AI, Web Development, Portfolio, JavaScript, React, Node.js" />
-  <title>Sathish — Full Stack Developer Portfolio</title>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="icon" href="data:," />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <div class="bg-animation"></div>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <h1 class="logo">Sathish <small class="muted">@sathish099</small></h1>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#blog">Blog</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container">
-    <section id="hero" class="hero">
-      <div class="hero-content">
-        <span class="badge">Available for hire</span>
-        <h2>Building the <span class="gradient-text">Future</span> with Code & AI</h2>
-        <p class="lead">Full Stack Developer • AI Enthusiast • UI/UX Designer</p>
-        <p>I craft high-performance web applications and AI-powered tools that solve real-world problems. Let's build
-          something amazing together.</p>
-        <p class="cta-row">
-          <a class="btn" href="#projects">View My Work</a>
-          <a class="btn ghost" href="https://github.com/sathish099" target="_blank" rel="noopener">GitHub Profile</a>
-        </p>
-      </div>
-      <div class="avatar">
-        <div class="avatar-placeholder">S</div>
-      </div>
+    <header>
+        <h1>Full-Stack Web Developer (MEVN Stack)</h1>
+        <p>Professional Summary: I have 3+ years of experience in full-stack web development, specializing in building responsive and user-friendly applications.</p>
+    </header>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Backend Technologies:</strong> Node.js, NestJS, Express.js</li>
+            <li><strong>Frontend Technologies:</strong> Vue.js, Nuxt 3, Tailwind CSS</li>
+            <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
+            <li><strong>DevOps Tools:</strong> Git, GitHub, Docker, CI/CD</li>
+        </ul>
     </section>
-
-    <section id="about" class="card">
-      <h3>About Me</h3>
-      <p>I'm Sathish, a passionate developer based in India. I enjoy building reliable, maintainable software and
-        exploring emerging technologies. My journey spans frontend UI/UX, backend APIs, and AI integration.</p>
-      <p>I'm always learning and love turning ideas into working prototypes. Currently focused on Generative AI and
-        modern web frameworks.</p>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Updated about section content.</p>
     </section>
-
-    <section id="skills" class="card">
-      <h3>Skills & Technologies</h3>
-      <div class="skills-grid">
-        <div class="skill-item">
-          <span class="skill-name">JavaScript / TypeScript</span>
-          <div class="skill-bar">
-            <div class="fill" style="width:92%"></div>
-          </div>
-        </div>
-        <div class="skill-item">
-          <span class="skill-name">React & Next.js</span>
-          <div class="skill-bar">
-            <div class="fill" style="width:85%"></div>
-          </div>
-        </div>
-        <div class="skill-item">
-          <span class="skill-name">Node.js & Express</span>
-          <div class="skill-bar">
-            <div class="fill" style="width:80%"></div>
-          </div>
-        </div>
-        <div class="skill-item">
-          <span class="skill-name">AI Integration (OpenAI)</span>
-          <div class="skill-bar">
-            <div class="fill" style="width:75%"></div>
-          </div>
-        </div>
-        <div class="skill-item">
-          <span class="skill-name">HTML5 & CSS3</span>
-          <div class="skill-bar">
-            <div class="fill" style="width:95%"></div>
-          </div>
-        </div>
-        <div class="skill-item">
-          <span class="skill-name">Git & DevOps</span>
-          <div class="skill-bar">
-            <div class="fill" style="width:88%"></div>
-          </div>
-        </div>
-      </div>
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <p>Worked at LMES Company Pvt Ltd on LMS development.</p>
     </section>
-
-    <section id="projects" class="card">
-      <h3>Featured Projects</h3>
-      <div class="projects-grid">
-        <article class="project">
-          <div class="project-header">
-            <h4>💬 ChatGPT Clone</h4>
-            <span class="project-tag">AI</span>
-          </div>
-          <p>A full-featured AI chat interface powered by OpenAI API. Features include real-time responses, persistent
-            chat history, multiple sessions, and markdown rendering.</p>
-          <p class="tech-stack">JavaScript • OpenAI API • LocalStorage</p>
-          <div class="project-links">
-            <a href="projects/chatgpt-clone/index.html" target="_blank" rel="noopener">Live Demo</a>
-            <a href="https://github.com/sathish099/sathish099.github.io/tree/main/projects/chatgpt-clone"
-              target="_blank" rel="noopener">Source Code</a>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project-header">
-            <h4>🍕 Zomoto</h4>
-            <span class="project-tag">UI/UX</span>
-          </div>
-          <p>A responsive food delivery platform landing page. Features restaurant cards, search functionality, category
-            filtering, and a clean, modern design.</p>
-          <p class="tech-stack">HTML • CSS • JavaScript</p>
-          <div class="project-links">
-            <a href="projects/zomoto/index.html" target="_blank" rel="noopener">Live Demo</a>
-            <a href="https://github.com/sathish099/sathish099.github.io/tree/main/projects/zomoto" target="_blank"
-              rel="noopener">Source Code</a>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project-header">
-            <h4>📺 YTube</h4>
-            <span class="project-tag">Clone</span>
-          </div>
-          <p>A YouTube-inspired video streaming platform clone. Features video cards, search/filter functionality, modal
-            video playback, and responsive design.</p>
-          <p class="tech-stack">HTML • CSS • JavaScript</p>
-          <div class="project-links">
-            <a href="projects/youtube/index.html" target="_blank" rel="noopener">Live Demo</a>
-            <a href="https://github.com/sathish099/sathish099.github.io/tree/main/projects/youtube" target="_blank"
-              rel="noopener">Source Code</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="blog" class="card">
-      <h3>Latest Articles</h3>
-      <div class="blog-grid">
-        <article class="blog-post">
-          <span class="date">Nov 15, 2025</span>
-          <h4>Getting Started with OpenAI API</h4>
-          <p>A comprehensive guide to integrating AI into your web applications using the OpenAI API.</p>
-          <a href="#" class="read-more">Read More →</a>
-        </article>
-        <article class="blog-post">
-          <span class="date">Oct 28, 2025</span>
-          <h4>Mastering CSS Grid & Flexbox</h4>
-          <p>Tips and tricks for building complex, responsive layouts with modern CSS techniques.</p>
-          <a href="#" class="read-more">Read More →</a>
-        </article>
-      </div>
-    </section>
-
-    <section id="testimonials" class="card">
-      <h3>What People Say</h3>
-      <div class="testimonials-grid">
-        <div class="testimonial">
-          <p>"Sathish is an incredible developer. His attention to detail and ability to solve complex problems is
-            outstanding."</p>
-          <div class="author">
-            <div class="author-avatar">J</div>
-            <div>
-              <strong>John Doe</strong>
-              <span>Product Manager</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial">
-          <p>"The AI integration in the ChatGPT clone is seamless. Highly recommend working with him!"</p>
-          <div class="author">
-            <div class="author-avatar">S</div>
-            <div>
-              <strong>Sarah Smith</strong>
-              <span>Tech Lead</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="card">
-      <h3>Let's Connect</h3>
-      <p>I'm always open to collaborations, interesting projects, and learning opportunities.</p>
-      <div class="contact-links">
-        <a href="https://github.com/sathish099" target="_blank" rel="noopener" class="contact-link">
-          <span class="icon">🐙</span>
-          <span>GitHub</span>
-        </a>
-        <a href="https://www.linkedin.com/in/sathish-p-2030561bb/" target="_blank" rel="noopener" class="contact-link">
-          <span class="icon">💼</span>
-          <span>LinkedIn</span>
-        </a>
-        <a href="mailto:contact@sathish099.com" class="contact-link">
-          <span class="icon">✉️</span>
-          <span>Email</span>
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> Sathish (@sathish099). Built with ❤️ and vanilla JavaScript.</small>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    <footer>
+        <h2>Contact Information</h2>
+        <p>Email: sathishdotdev@gmail.com</p>
+        <p>Location: Chennai, India</p>
+    </footer>
 </body>
-
 </html>
