@@ -20,6 +20,7 @@
     <link rel="preconnect" href="https://images.unsplash.com">
     <link rel="preconnect" href="https://github.com">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -58,21 +59,15 @@
                 <span class="brand-mark">SP</span>
                 <span>Sathish P</span>
             </a>
-
             <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="siteNav">
-                <span class="menu-icon" aria-hidden="true">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
+                <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
                 Menu
             </button>
-
             <nav class="site-nav" id="siteNav">
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
+                <a href="#summary">Summary</a>
+                <a href="#impact">Impact</a>
                 <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
+                <a href="#stack">Stack</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
@@ -82,126 +77,99 @@
         <section class="hero" id="top" aria-label="Introduction">
             <div class="hero-media" aria-hidden="true"></div>
             <div class="hero-overlay"></div>
-            <div class="container hero-content">
-                <p class="eyebrow">Nuxt 3 | NestJS | LMS platforms</p>
-                <h1>Full-stack developer turning product requirements into reliable web experiences.</h1>
-                <p class="hero-copy">
-                    I build learning platforms, dashboards, and production-ready web apps with Vue, Nuxt, Node, and NestJS.
-                </p>
-                <div class="hero-actions">
-                    <a class="button primary" href="#projects">View projects</a>
-                    <a class="button secondary" href="mailto:sathishdotdev@gmail.com">Email me</a>
-                    <a class="button secondary" href="mailto:sathishdotdev@gmail.com?subject=Resume%20request%20from%20portfolio">Request resume</a>
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Interview profile | Full-stack developer</p>
+                    <h1>I build LMS flows, dashboards, and reliable product surfaces from API to UI.</h1>
+                    <p>Chennai-based developer with 3+ years across Nuxt 3, Vue, Node.js, NestJS microservices, and operational debugging.</p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="#projects">Review my work</a>
+                        <a class="button secondary" href="#contact">Start a conversation</a>
+                        <a class="button secondary" href="resume.html">View resume</a>
+                    </div>
                 </div>
-                <dl class="hero-stats" aria-label="Portfolio highlights">
+                <aside class="profile-panel" aria-label="Sathish P profile snapshot">
+                    <img src="https://github.com/sathish099.png?size=520" alt="Sathish P profile photo" width="220" height="220">
                     <div>
-                        <dt>3+</dt>
-                        <dd>Years building web products</dd>
+                        <p class="panel-label">Available for</p>
+                        <h2>Full-stack roles, product builds, and dashboard work.</h2>
                     </div>
-                    <div>
-                        <dt>25%</dt>
-                        <dd>Page load reduction using Nuxt SSR</dd>
-                    </div>
-                    <div>
-                        <dt>30%</dt>
-                        <dd>Faster bug resolution through better logs</dd>
-                    </div>
-                </dl>
-                <a class="scroll-cue" href="#about" aria-label="Scroll to about section">Scroll</a>
+                    <dl class="signal-list">
+                        <div><dt>Focus</dt><dd>LMS, dashboards, Nuxt, NestJS</dd></div>
+                        <div><dt>Location</dt><dd>Chennai, India</dd></div>
+                        <div><dt>Proof</dt><dd>Live portfolio, production LMS, GitHub source</dd></div>
+                    </dl>
+                </aside>
             </div>
         </section>
 
-        <section class="intro-band" id="about">
-            <div class="container intro-grid">
-                <div>
-                    <p class="section-kicker">About</p>
-                    <h2>Developer with strong product sense and backend-to-frontend ownership.</h2>
-                </div>
-                <div class="intro-copy">
-                    <p>
-                        I am a result-oriented full-stack web developer based in Chennai, focused on scalable web applications, LMS flows, admin dashboards, and service integrations.
-                    </p>
-                    <p>
-                        My day-to-day work connects Nuxt 3 interfaces, NestJS microservices, database-backed APIs, and clear operational debugging so product teams can move with confidence.
-                    </p>
-                </div>
-                <img class="profile-image" src="https://github.com/sathish099.png?size=520" alt="Sathish P profile photo" width="260" height="260">
-            </div>
-        </section>
-
-        <section class="section" id="experience">
-            <div class="container">
+        <section class="section summary-section" id="summary">
+            <div class="container split-section">
                 <div class="section-heading">
-                    <p class="section-kicker">Experience</p>
-                    <h2>Recent work with measurable impact.</h2>
+                    <p class="section-kicker">Summary</p>
+                    <h2>A builder who can read product needs, wire services, and finish the interface.</h2>
                 </div>
-
-                <article class="timeline-item">
-                    <div class="timeline-date">Oct 2022 - Present</div>
-                    <div class="timeline-content">
-                        <p class="role">Full-Stack Web Developer</p>
-                        <h3>LMES Company Pvt Ltd</h3>
-                        <div class="achievement-grid">
-                            <p><strong>LMS Development</strong> Built structured learning flows for Chitti-Maker-School with Nuxt 3 and student-focused progress patterns.</p>
-                            <p><strong>Service Architecture</strong> Developed NestJS microservices that keep backend responsibilities modular and easier to scale.</p>
-                            <p><strong>Dashboard Systems</strong> Delivered school administration dashboards with reporting views, workflow clarity, and maintainable UI components.</p>
-                            <p><strong>Reliability</strong> Improved bug reproduction and time-to-fix with clearer logs, documentation, and root-cause notes.</p>
-                        </div>
+                <div class="summary-copy">
+                    <p>My work sits between product clarity and engineering execution: learning flows that students can follow, dashboards that admins can operate, and backend services that stay modular enough to maintain.</p>
+                    <p>I like concrete work: understanding the user path, shaping the API, building the Nuxt/Vue interface, and tightening logs or docs so issues are easier to reproduce.</p>
+                    <div class="summary-tags" aria-label="Profile keywords">
+                        <span>Recruiter-ready experience</span>
+                        <span>Client-friendly delivery</span>
+                        <span>Developer-readable proof</span>
                     </div>
-                </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section impact-section" id="impact">
+            <div class="container">
+                <div class="section-heading wide">
+                    <p class="section-kicker">Impact</p>
+                    <h2>Recent work with outcomes a reviewer can scan fast.</h2>
+                </div>
+                <div class="impact-grid">
+                    <article class="impact-card highlight"><p class="metric">3+</p><h3>Years building web products</h3><p>Full-stack delivery across Vue/Nuxt interfaces, Node/NestJS APIs, and production LMS workflows.</p></article>
+                    <article class="impact-card"><p class="metric">25%</p><h3>Page load reduction</h3><p>Used Nuxt 3 SSR and Tailwind-focused UI delivery to improve mobile-first responsiveness.</p></article>
+                    <article class="impact-card"><p class="metric">30%</p><h3>Faster issue resolution</h3><p>Improved debugging loops through clearer logs, bug reproduction notes, and root-cause documentation.</p></article>
+                    <article class="impact-card"><p class="metric">1</p><h3>Core full-stack role</h3><p>Full-Stack Web Developer at LMES Company Pvt Ltd from Oct 2022 to present.</p></article>
+                </div>
             </div>
         </section>
 
         <section class="section project-section" id="projects">
             <div class="container">
-                <div class="section-heading compact">
+                <div class="section-heading wide">
                     <p class="section-kicker">Projects</p>
-                    <h2>Selected builds and product surfaces.</h2>
+                    <h2>Work samples that show product sense, implementation range, and honest boundaries.</h2>
                 </div>
-
                 <div class="project-grid">
-                    <article class="project-card">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Student using an online learning platform" width="900" height="560">
+                    <article class="project-card featured">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=82" alt="Student using an online learning platform" width="1000" height="640">
                         <div class="project-body">
-                            <p class="project-type">Learning platform</p>
+                            <p class="project-type">Production LMS</p>
                             <h3>Chitti-Maker-School LMS</h3>
-                            <p>Student-centric learning environment with structured content flow, progress tracking, and backend service integration.</p>
-                            <div class="tag-list" aria-label="Technologies">
-                                <span>Nuxt 3</span>
-                                <span>Tailwind CSS</span>
-                                <span>NestJS</span>
-                                <span>Microservices</span>
-                            </div>
-                            <div class="project-links">
-                                <a class="text-link" href="https://lms.chitti.app" target="_blank" rel="noopener noreferrer">Live app</a>
-                                <span class="project-note">Source private</span>
-                            </div>
+                            <p>Structured learning environment with student progress patterns, content flow, and backend service integration.</p>
+                            <div class="tag-list" aria-label="Technologies"><span>Nuxt 3</span><span>Tailwind CSS</span><span>NestJS</span><span>Microservices</span></div>
+                            <div class="project-links"><a class="text-link" href="https://lms.chitti.app" target="_blank" rel="noopener noreferrer">Live app</a><span class="project-note">Source private</span></div>
                         </div>
                     </article>
-
                     <article class="project-card">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="Analytics dashboard on a workstation" width="900" height="560">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=82" alt="Analytics dashboard on a workstation" width="900" height="560">
                         <div class="project-body">
-                            <p class="project-type">Admin dashboard</p>
+                            <p class="project-type">Internal dashboard</p>
                             <h3>Powered School Dashboard</h3>
-                            <p>School management dashboard with reporting surfaces, workflow shortcuts, and operational views for admins.</p>
-                            <div class="tag-list" aria-label="Technologies">
-                                <span>Vue.js</span>
-                                <span>Node.js</span>
-                                <span>PostgreSQL</span>
-                                <span>Docker</span>
-                            </div>
+                            <p>School administration surface for reporting, workflow shortcuts, and operational visibility.</p>
+                            <div class="tag-list" aria-label="Technologies"><span>Vue.js</span><span>Node.js</span><span>PostgreSQL</span><span>Docker</span></div>
                             <span class="project-note">Private internal project</span>
                         </div>
                     </article>
-
                     <article class="project-card">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Developer workspace with code on screen" width="900" height="560">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=82" alt="Developer workspace with code on screen" width="900" height="560">
                         <div class="project-body">
                             <p class="project-type">Frontend collection</p>
-                            <h3>UI Practice Projects</h3>
-                            <p>Static demos for chat, food delivery, and video platform experiences with responsive layouts and JavaScript interactions.</p>
-                            <div class="project-links">
+                            <h3>Portfolio and UI Experiments</h3>
+                            <p>Static demos for chat, food delivery, and video platform interfaces with responsive JavaScript interactions.</p>
+                            <div class="project-links stacked">
                                 <a class="text-link" href="projects/chatgpt-clone/">Chat UI</a>
                                 <a class="text-link" href="projects/zomoto/">Zomoto</a>
                                 <a class="text-link" href="projects/youtube/">YTube</a>
@@ -213,26 +181,16 @@
             </div>
         </section>
 
-        <section class="section" id="skills">
-            <div class="container">
+        <section class="section stack-section" id="stack">
+            <div class="container split-section">
                 <div class="section-heading">
-                    <p class="section-kicker">Skills</p>
-                    <h2>Practical stack for shipping web products.</h2>
+                    <p class="section-kicker">Stack</p>
+                    <h2>The tools I use to ship complete web surfaces.</h2>
                 </div>
-
-                <div class="skills-layout">
-                    <div class="skill-group">
-                        <h3>Frontend</h3>
-                        <p>Vue.js 2/3, Nuxt 3, JavaScript ES6+, TypeScript, Tailwind CSS, responsive UI systems.</p>
-                    </div>
-                    <div class="skill-group">
-                        <h3>Backend</h3>
-                        <p>Node.js, NestJS, Express.js, REST APIs, microservices, service integration, debugging workflows.</p>
-                    </div>
-                    <div class="skill-group">
-                        <h3>Data & Tools</h3>
-                        <p>MySQL, PostgreSQL, MongoDB, Docker, GitHub, CI/CD, Postman, Linear, technical documentation.</p>
-                    </div>
+                <div class="stack-grid">
+                    <article class="stack-card"><span>01</span><h3>Frontend</h3><p>Vue.js 2/3, Nuxt 3, JavaScript ES6+, TypeScript, Tailwind CSS, responsive UI systems.</p></article>
+                    <article class="stack-card"><span>02</span><h3>Backend</h3><p>Node.js, NestJS, Express.js, REST APIs, microservices, service integration, and debugging workflows.</p></article>
+                    <article class="stack-card"><span>03</span><h3>Data and delivery</h3><p>MySQL, PostgreSQL, MongoDB, Docker, GitHub, CI/CD, Postman, Linear, and documentation.</p></article>
                 </div>
             </div>
         </section>
@@ -241,28 +199,21 @@
             <div class="container contact-grid">
                 <div>
                     <p class="section-kicker">Contact</p>
-                    <h2>Have a product, dashboard, or LMS flow to build?</h2>
-                    <p>I am open to developer roles, freelance work, and collaborations where clean execution matters.</p>
-                </div>
-                <form class="contact-form" id="contactForm">
-                    <label>
-                        Name
-                        <input type="text" name="name" autocomplete="name" required>
-                    </label>
-                    <label>
-                        Email
-                        <input type="email" name="email" autocomplete="email" required>
-                    </label>
-                    <label>
-                        Message
-                        <textarea name="message" rows="4" required></textarea>
-                    </label>
-                    <button class="button primary" type="submit">Send message</button>
+                    <h2>Send the brief, the role, or the problem. I will read it like a builder.</h2>
+                    <p>Use the form for a role, freelance project, dashboard build, or LMS workflow discussion.</p>
                     <div class="contact-actions" aria-label="Social links">
                         <a class="text-link" href="mailto:sathishdotdev@gmail.com">Email</a>
                         <a class="text-link" href="https://www.linkedin.com/in/sathish-p-2030561bb" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         <a class="text-link" href="https://github.com/sathish099" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <p class="form-note">EmailJS is configured. Messages will be sent using your portfolio inquiry template.</p>
+                    <label>Name<input type="text" name="from_name" autocomplete="name" required></label>
+                    <label>Email<input type="email" name="reply_to" autocomplete="email" required></label>
+                    <label>Message<textarea name="message" rows="4" required></textarea></label>
+                    <button class="button primary" type="submit">Send message</button>
+                    <p class="form-status" aria-live="polite"></p>
                 </form>
             </div>
         </section>
@@ -281,12 +232,20 @@
         const menuToggle = document.querySelector('.menu-toggle');
         const siteNav = document.querySelector('.site-nav');
         const navLinks = [...siteNav.querySelectorAll('a')];
-        const sections = navLinks
-            .map((link) => document.querySelector(link.getAttribute('href')))
-            .filter(Boolean);
+        const sections = navLinks.map((link) => document.querySelector(link.getAttribute('href'))).filter(Boolean);
         const scrollTopButton = document.querySelector('.scroll-top');
         const contactForm = document.querySelector('#contactForm');
+        const formStatus = document.querySelector('.form-status');
         const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const emailConfig = {
+            publicKey: '6hexLmAy1sl5DXLhh',
+            serviceId: 'service_cvjnor7',
+            templateId: 'template_jjhp49e'
+        };
+
+        if (window.emailjs) {
+            emailjs.init({ publicKey: emailConfig.publicKey });
+        }
 
         menuToggle.addEventListener('click', () => {
             const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
@@ -294,7 +253,7 @@
             siteNav.classList.toggle('is-open');
         });
 
-        siteNav.querySelectorAll('a').forEach((link) => {
+        navLinks.forEach((link) => {
             link.addEventListener('click', () => {
                 menuToggle.setAttribute('aria-expanded', 'false');
                 siteNav.classList.remove('is-open');
@@ -330,12 +289,27 @@
             window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
         });
 
-        contactForm.addEventListener('submit', (event) => {
+        contactForm.addEventListener('submit', async (event) => {
             event.preventDefault();
-            const data = new FormData(contactForm);
-            const subject = encodeURIComponent(`Portfolio inquiry from ${data.get('name')}`);
-            const body = encodeURIComponent(`Name: ${data.get('name')}\nEmail: ${data.get('email')}\n\n${data.get('message')}`);
-            window.location.href = `mailto:sathishdotdev@gmail.com?subject=${subject}&body=${body}`;
+
+            if (!window.emailjs) {
+                formStatus.textContent = 'Email service did not load. Please email me directly for now.';
+                return;
+            }
+
+            if (emailConfig.serviceId.includes('YOUR_') || emailConfig.templateId.includes('YOUR_')) {
+                formStatus.textContent = 'EmailJS service or template ID is not configured yet. Email me directly for now.';
+                return;
+            }
+
+            formStatus.textContent = 'Sending...';
+            try {
+                await emailjs.sendForm(emailConfig.serviceId, emailConfig.templateId, contactForm);
+                contactForm.reset();
+                formStatus.textContent = 'Message sent. Thank you.';
+            } catch (error) {
+                formStatus.textContent = 'Something went wrong. Please email me directly.';
+            }
         });
 
         document.querySelector('.copyright').textContent = `© ${new Date().getFullYear()} Sathish P. All rights reserved.`;
