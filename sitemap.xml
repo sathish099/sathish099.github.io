@@ -16,4 +16,8 @@
     <loc>https://sathish099.github.io/projects/youtube/</loc>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://sathish099.github.io/resume.html</loc>
+    <priority>0.7</priority>
+  </url>
 </urlset>
