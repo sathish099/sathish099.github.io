@@ -5,18 +5,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://sathish099.github.io/projects/chatgpt-clone/</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://sathish099.github.io/projects/zomoto/</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://sathish099.github.io/projects/youtube/</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://sathish099.github.io/resume.html</loc>
     <priority>0.7</priority>
   </url>
