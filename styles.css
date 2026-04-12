@@ -194,8 +194,8 @@ p {
 
 h1 {
   margin-bottom: 1.1rem;
-  font-size: clamp(2.25rem, 7vw, 5.2rem);
-  line-height: 0.98;
+  font-size: clamp(2.1rem, 5.8vw, 4.45rem);
+  line-height: 1.02;
 }
 
 h2 {
@@ -364,13 +364,15 @@ p {
 }
 
 .talk-grid,
-.uses-grid {
+.uses-grid,
+.impact-grid {
   display: grid;
   gap: 1rem;
 }
 
 .talk-grid article,
-.uses-grid article {
+.uses-grid article,
+.impact-grid article {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel-2);
@@ -378,8 +380,13 @@ p {
 }
 
 .talk-grid p,
-.uses-grid p {
+.uses-grid p,
+.impact-grid p {
   margin-bottom: 0;
+}
+
+.impact-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .site-footer {
@@ -422,7 +429,8 @@ p {
 
 .resume-hero h1 {
   margin-bottom: 0.4rem;
-  font-size: clamp(2.2rem, 8vw, 5rem);
+  font-size: clamp(2.25rem, 5.6vw, 4rem);
+  line-height: 1;
 }
 
 .resume-contact,
@@ -457,6 +465,10 @@ p {
 .resume-section h3,
 .resume-section p {
   margin: 0;
+}
+
+.resume-section > :not(h2) {
+  grid-column: 2;
 }
 
 .resume-section > div {
@@ -567,6 +579,7 @@ p {
 
   .hero-grid,
   .two-column,
+  .impact-grid,
   .project-row,
   .resume-hero,
   .resume-section,
@@ -586,6 +599,10 @@ p {
 
   .resume-entry {
     flex-direction: column;
+  }
+
+  .resume-section > :not(h2) {
+    grid-column: auto;
   }
 }
 
