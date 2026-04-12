@@ -194,8 +194,8 @@ p {
 
 h1 {
   margin-bottom: 1.1rem;
-  font-size: clamp(2.6rem, 9vw, 6.7rem);
-  line-height: 0.9;
+  font-size: clamp(2.25rem, 7vw, 5.2rem);
+  line-height: 0.98;
 }
 
 h2 {
@@ -457,6 +457,11 @@ p {
 .resume-section h3,
 .resume-section p {
   margin: 0;
+}
+
+.resume-section > div {
+  display: grid;
+  gap: 1rem;
 }
 
 .resume-entry {
