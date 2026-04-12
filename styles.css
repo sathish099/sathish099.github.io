@@ -231,6 +231,7 @@ p {
 }
 
 .footer-icon-link {
+  display: inline-flex;
   width: 2rem;
   height: 2rem;
   align-items: center;
@@ -239,18 +240,35 @@ p {
   border-radius: 8px;
 }
 
-.footer-icon-link img {
+.footer-icon {
   width: 18px;
   height: 18px;
-  filter: invert(72%) sepia(10%) saturate(404%) hue-rotate(174deg) brightness(89%) contrast(85%);
+  background: var(--muted);
+  mask: center / contain no-repeat;
+  -webkit-mask: center / contain no-repeat;
+}
+
+.github-icon {
+  mask-image: url("https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/github.svg");
+  -webkit-mask-image: url("https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/github.svg");
+}
+
+.linkedin-icon {
+  mask-image: url("https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/linkedin.svg");
+  -webkit-mask-image: url("https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/linkedin.svg");
+}
+
+.x-icon {
+  mask-image: url("https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/x.svg");
+  -webkit-mask-image: url("https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/x.svg");
 }
 
 .footer-icon-link:hover {
   border-color: var(--accent);
 }
 
-.footer-icon-link:hover img {
-  filter: invert(89%) sepia(29%) saturate(650%) hue-rotate(94deg) brightness(94%) contrast(93%);
+.footer-icon-link:hover .footer-icon {
+  background: var(--accent);
 }
 
 .button {
