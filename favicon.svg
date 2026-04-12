@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Sathish P">
+  <rect width="64" height="64" rx="12" fill="#087f7a"/>
+  <path d="M19 41c3 3 7 5 12 5 7 0 12-4 12-10 0-5-3-8-10-10l-4-1c-4-1-5-2-5-4 0-2 2-4 6-4 4 0 7 1 10 4l4-6c-4-3-8-5-14-5-8 0-14 5-14 11 0 5 4 8 11 10l4 1c3 1 4 2 4 4s-2 3-5 3c-4 0-8-2-11-5l-4 7Z" fill="#fff"/>
+  <path d="M45 47h-9V25h9c6 0 10 4 10 11s-4 11-10 11Zm-2-7h2c2 0 4-1 4-4s-2-4-4-4h-2v8Z" fill="#f2b705"/>
+</svg>
