@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Sathish P for full-stack development, LMS, dashboard, Nuxt, Vue, Node.js, and NestJS work.">
+    <meta name="theme-color" content="#0b0d10">
+    <meta property="og:title" content="Contact | Sathish P">
+    <meta property="og:description" content="Send a portfolio inquiry to Sathish P.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sathish099.github.io/contact.html">
+    <title>Contact | Sathish P</title>
+    <link rel="canonical" href="https://sathish099.github.io/contact.html">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body class="contact-page">
+    <a class="skip-link" href="#contact">Skip to contact form</a>
+
+    <header class="site-header" aria-label="Contact navigation">
+        <div class="container nav-shell">
+            <a class="brand" href="index.html" aria-label="Back to portfolio">Sathish P</a>
+            <nav class="site-nav">
+                <a href="index.html">Portfolio</a>
+                <a href="resume.html">Resume</a>
+                <a href="https://github.com/sathish099" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contact" class="contact-shell">
+        <section class="container contact-card">
+            <div class="section-heading">
+                <p class="eyebrow">Contact</p>
+                <h1>Send the role, brief, or problem.</h1>
+                <p>I read messages directly and reply from <a href="mailto:sathishdotdev@gmail.com">sathishdotdev@gmail.com</a>.</p>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <label>
+                    Name
+                    <input type="text" name="from_name" autocomplete="name" required>
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="reply_to" autocomplete="email" required>
+                </label>
+                <label>
+                    Message
+                    <textarea name="message" rows="5" required></textarea>
+                </label>
+                <button class="button primary" type="submit">Send message</button>
+                <p class="form-status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        const contactForm = document.querySelector('#contactForm');
+        const formStatus = document.querySelector('.form-status');
+        const emailConfig = {
+            publicKey: '6hexLmAy1sl5DXLhh',
+            serviceId: 'service_cvjnor7',
+            templateId: 'template_jjhp49e'
+        };
+
+        if (window.emailjs) {
+            emailjs.init({ publicKey: emailConfig.publicKey });
+        }
+
+        contactForm.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            if (!window.emailjs) {
+                formStatus.textContent = 'Email service did not load. Please email me directly.';
+                return;
+            }
+
+            formStatus.textContent = 'Sending...';
+
+            try {
+                await emailjs.sendForm(emailConfig.serviceId, emailConfig.templateId, contactForm);
+                contactForm.reset();
+                formStatus.textContent = 'Message sent. Thank you.';
+            } catch (error) {
+                formStatus.textContent = 'Something went wrong. Please email me directly.';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -71,7 +71,7 @@
                     <div class="hero-actions">
                         <a class="button primary" href="#projects">View projects</a>
                         <a class="button secondary" href="resume.html">Resume</a>
-                        <a class="button secondary" href="mailto:sathishdotdev@gmail.com">Email</a>
+                        <a class="button secondary" href="contact.html">Email</a>
                     </div>
                 </div>
                 <aside class="hero-panel" aria-label="Profile highlights">
@@ -139,14 +139,14 @@
                     </article>
                     <article class="project-row">
                         <div>
-                            <p class="project-type">Open source / portfolio</p>
-                            <h3>Portfolio and UI experiments</h3>
-                            <p>Static GitHub Pages portfolio with small interface demos for chat, food delivery, and video browsing.</p>
+                            <p class="project-type">Open source / experiments</p>
+                            <h3>UI and Feature Experiments</h3>
+                            <p>Small interface demos for chat, food delivery, and video browsing. Static versions for visual testing.</p>
                         </div>
                         <div class="project-meta">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
+                            <a href="projects/chatgpt-clone/index.html">ChatGPT</a>
+                            <a href="projects/zomoto/index.html">Food UI</a>
+                            <a href="projects/youtube/index.html">Video UI</a>
                             <a href="https://github.com/sathish099/sathish099.github.io" target="_blank" rel="noopener noreferrer">Source</a>
                         </div>
                     </article>
@@ -198,7 +198,7 @@
         <div class="container footer-inner">
             <p class="copyright">© 2026 Sathish P</p>
             <div class="footer-links">
-                <a href="mailto:sathishdotdev@gmail.com">Email</a>
+                <a href="contact.html">Email</a>
                 <a href="https://github.com/sathish099" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a href="https://www.linkedin.com/in/sathish-p-2030561bb" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
@@ -215,6 +215,23 @@
             const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
             menuToggle.setAttribute('aria-expanded', String(!isOpen));
             siteNav.classList.toggle('is-open');
+        });
+
+        document.addEventListener('click', (event) => {
+            const clickedInsideMenu = siteNav.contains(event.target) || menuToggle.contains(event.target);
+
+            if (!clickedInsideMenu && siteNav.classList.contains('is-open')) {
+                menuToggle.setAttribute('aria-expanded', 'false');
+                siteNav.classList.remove('is-open');
+            }
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && siteNav.classList.contains('is-open')) {
+                menuToggle.setAttribute('aria-expanded', 'false');
+                siteNav.classList.remove('is-open');
+                menuToggle.focus();
+            }
         });
 
         navLinks.forEach((link) => {

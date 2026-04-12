@@ -132,6 +132,19 @@ a {
   width: 14px;
   height: 2px;
   background: currentColor;
+  transition: transform 160ms ease, opacity 160ms ease;
+}
+
+.menu-toggle[aria-expanded="true"] .menu-icon span:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.menu-toggle[aria-expanded="true"] .menu-icon span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle[aria-expanded="true"] .menu-icon span:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
 }
 
 .section {
@@ -145,10 +158,16 @@ a {
   align-items: center;
 }
 
-.hero-grid,
-.two-column {
+.hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.78fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: start;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: minmax(0, 0.4fr) minmax(0, 1fr);
   gap: clamp(2rem, 6vw, 5rem);
   align-items: start;
 }
@@ -453,6 +472,61 @@ p {
   padding-left: 1.2rem;
 }
 
+.contact-page {
+  background: var(--bg);
+}
+
+.contact-shell {
+  min-height: calc(100svh - 64px);
+  display: grid;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.contact-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(280px, 0.72fr);
+  gap: clamp(2rem, 6vw, 4rem);
+  align-items: start;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: clamp(1rem, 4vw, 2.5rem);
+}
+
+.contact-card a {
+  color: var(--accent);
+}
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 0.4rem;
+  color: var(--text);
+  font-weight: 800;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  padding: 0.75rem 0.85rem;
+  font: inherit;
+  resize: vertical;
+}
+
+.form-status {
+  min-height: 1.5rem;
+  margin: 0;
+}
+
 @media (max-width: 760px) {
   .container {
     width: min(100% - 1.25rem, var(--max));
@@ -491,6 +565,7 @@ p {
   .project-row,
   .resume-hero,
   .resume-section,
+  .contact-card,
   .footer-inner {
     grid-template-columns: 1fr;
   }
