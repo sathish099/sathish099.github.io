@@ -445,6 +445,18 @@ p {
   gap: 0.7rem;
 }
 
+.resume-skill-grid p {
+  display: grid;
+  grid-template-columns: minmax(130px, 0.32fr) minmax(0, 1fr);
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.resume-skill-grid strong {
+  color: var(--text);
+  font-weight: 800;
+}
+
 .resume-contact a,
 .resume-projects a {
   color: var(--accent);
@@ -604,6 +616,11 @@ p {
 
   .resume-entry {
     flex-direction: column;
+  }
+
+  .resume-skill-grid p {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
   }
 
   .resume-section > :not(h2) {
