@@ -240,35 +240,18 @@ p {
   border-radius: 8px;
 }
 
-.footer-icon {
-  width: 18px;
-  height: 18px;
-  background: var(--muted);
-  mask: center / contain no-repeat;
-  -webkit-mask: center / contain no-repeat;
-}
-
-.github-icon {
-  mask-image: url("https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/github.svg");
-  -webkit-mask-image: url("https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/github.svg");
-}
-
-.linkedin-icon {
-  mask-image: url("https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/linkedin.svg");
-  -webkit-mask-image: url("https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/linkedin.svg");
-}
-
-.x-icon {
-  mask-image: url("https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/x.svg");
-  -webkit-mask-image: url("https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/x.svg");
+.footer-icon-link i {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1;
 }
 
 .footer-icon-link:hover {
   border-color: var(--accent);
 }
 
-.footer-icon-link:hover .footer-icon {
-  background: var(--accent);
+.footer-icon-link:hover i {
+  color: var(--accent);
 }
 
 .button {
