@@ -230,6 +230,29 @@ p {
   gap: 0.75rem;
 }
 
+.footer-icon-link {
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.footer-icon-link img {
+  width: 18px;
+  height: 18px;
+  filter: invert(72%) sepia(10%) saturate(404%) hue-rotate(174deg) brightness(89%) contrast(85%);
+}
+
+.footer-icon-link:hover {
+  border-color: var(--accent);
+}
+
+.footer-icon-link:hover img {
+  filter: invert(89%) sepia(29%) saturate(650%) hue-rotate(94deg) brightness(94%) contrast(93%);
+}
+
 .button {
   display: inline-flex;
   min-height: 44px;
