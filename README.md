@@ -18,6 +18,10 @@ Live site: https://sathish099.github.io
 - EmailJS is used client-side with a public key only. No private API secrets are stored in this repository.
 - Practice demos are archived under `projects/`, removed from sitemap discovery, and marked `noindex, nofollow`.
 
+## Editorial Design
+
+The portfolio uses a newspaper-inspired layout in `newspaper.css`, layered over the existing shared styles. `newspaper.js` provides project filters, a persistent evening edition and resume printing. Project notes use native HTML details and remain accessible without JavaScript. The contact page keeps its existing design and behavior.
+
 ## Local Preview
 
 ```bash
