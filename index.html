@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sathish P is a full-stack developer with 4+ years of experience in Nuxt, NestJS, TypeScript and MySQL, building education applications, automated monitoring and AI integrations.">
-    <meta name="theme-color" content="#0b0d10">
+    <meta name="theme-color" content="#f2eee5">
     <meta property="og:title" content="Sathish P | Full-Stack Developer">
     <meta property="og:description" content="Sathish P is a full-stack developer with 4+ years of experience in Nuxt, NestJS, TypeScript and MySQL, building education applications, automated monitoring and AI integrations.">
     <meta property="og:type" content="website">
@@ -51,185 +51,33 @@
             "knowsAbout": ["Nuxt", "Vue.js", "NestJS", "TypeScript", "MySQL", "Playwright", "Learning Management Systems", "AI API integration"]
         }
     </script>
+    <link rel="stylesheet" href="newspaper.css">
+    <script src="newspaper.js" defer></script>
 </head>
-<body>
-    <a class="skip-link" href="#main">Skip to content</a>
-
-    <header class="site-header">
-        <div class="container nav-shell">
-            <a class="brand" href="#home" aria-label="Sathish P home">Sathish P</a>
-            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="siteNav">
-                <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
-                Menu
-            </button>
-            <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#talks">Workflow</a>
-                <a href="#uses">Uses</a>
-            </nav>
-        </div>
-    </header>
-
-    <main id="main">
-        <section class="hero section" id="home">
-            <div class="container hero-grid">
-                <div class="hero-copy">
-                    <p class="eyebrow">Full-stack developer / 4+ years of experience</p>
-                    <h1>Student experiences. Backend APIs. Reliable workflows.</h1>
-                    <p>I build education web applications with Nuxt, NestJS, TypeScript and MySQL, from student interfaces and APIs to automated testing and monitoring.</p>
-                    <div class="hero-actions">
-                        <a class="button primary" href="#projects">View projects</a>
-                        <a class="button secondary" href="resume.html">Resume</a>
-                        <a class="button secondary" href="contact.html">Email</a>
-                    </div>
-                </div>
-                <aside class="hero-panel" aria-label="Profile highlights">
-                    <img class="profile-photo" src="https://github.com/sathish099.png?size=320" alt="Sathish P profile photo" width="160" height="160">
-                    <dl>
-                        <div><dt>Experience</dt><dd>4+ years</dd></div>
-                        <div><dt>Specialty</dt><dd>Nuxt, NestJS, TypeScript, MySQL</dd></div>
-                        <div><dt>Domain</dt><dd>LMS, dashboards, internal tools</dd></div>
-                        <div><dt>Location</dt><dd>Chennai, India</dd></div>
-                    </dl>
-                </aside>
-            </div>
-        </section>
-
-        <section class="section" id="about">
-            <div class="container two-column">
-                <div class="section-heading"><p class="eyebrow">About</p><h2>Full-stack delivery across education products.</h2></div>
-                <div class="content-stack">
-                    <p>I have worked at LMES Academy as a Junior Full-Stack Developer since September 2022. My responsibilities span student-facing interfaces, backend APIs, database changes, testing and production troubleshooting.</p>
-                    <p>I work within our team's existing architecture and deployment setup. I use Codex and Claude to assist development, review the changes, manually test key flows and run Playwright checks before team review.</p>
-                    <ul class="plain-list"><li>Core stack: Nuxt, NestJS, TypeScript and MySQL.</li><li>Student LMS serving approximately 10,000 students, with around 3,000 daily active learners.</li><li>Experience integrating AI APIs, background queues and reporting workflows.</li></ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="impact">
-            <div class="container">
-                <div class="section-heading wide"><p class="eyebrow">LMS Work</p><h2>Built across the student learning journey.</h2><p>Frontend features and backend changes within the team's existing service architecture.</p></div>
-                <div class="impact-grid">
-                    <article><h3>Courses, Tasks &amp; Quizzes</h3><p>Built student course views, assignment uploads, quizzes, reports and profile management.</p></article>
-                    <article><h3>Background Processing</h3><p>Supported uploads, quizzes and attendance using the team's Redis queue setup, including background processing for task uploads.</p></article>
-                    <article><h3>Certificates &amp; Reporting</h3><p>Implemented dashboard-managed certificate templates and student downloads with Cloudflare PDF rendering; integrated PintailDB queries with internal reporting APIs.</p></article>
-                    <article><h3>Testing &amp; Troubleshooting</h3><p>Added Playwright end-to-end tests using test data. Use Sentry and Better Stack to investigate errors, review logs and verify fixes.</p></article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section muted-section" id="projects">
-            <div class="container">
-                <div class="section-heading wide"><p class="eyebrow">Projects</p><h2>Selected work at LMES Academy.</h2></div>
-                <div class="project-list">
-                    <article class="project-row"><div><p class="project-type">Production LMS</p><h3>Student Learning Management System</h3><p>Built the student-facing application and implemented backend API and database changes for courses, task uploads, quizzes, reports, certificates and profiles. The platform serves approximately 10,000 students, including around 3,000 daily active learners.</p></div><div class="project-meta"><span>Nuxt</span><span>NestJS</span><span>TypeScript</span><span>MySQL</span></div></article>
-                    <article class="project-row"><div><p class="project-type">Automation &amp; AI integration</p><h3>Workshop Registration Monitoring</h3><p>Built Playwright checks scheduled every three hours, with page-load timing and separate performance reporting. Added waits and retries before Slack failure alerts. Integrated AI explanations and suggested next steps, retaining original failure details when the AI API is unavailable.</p></div><div class="project-meta"><span>Playwright</span><span>Cron</span><span>AI API</span><span>Slack</span></div></article>
-                    <article class="project-row"><div><p class="project-type">In development · Awaiting testing-team approval</p><h3>Foundation Management Platform</h3><p>Developed frontend and backend functionality for student tracking, donor–student mapping, progress visibility and admin approvals. The platform is nearing completion.</p></div><div class="project-meta"><span>Student tracking</span><span>Donor mapping</span><span>Admin approvals</span></div></article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="talks">
-            <div class="container two-column">
-                <div class="section-heading"><p class="eyebrow">Workflow</p><h2>Review, reproduce, test and verify.</h2></div>
-                <div class="talk-grid">
-                    <article><h3>Feature development</h3><p>Translate business and customer requirements into frontend, API and database changes within the team's conventions.</p></article>
-                    <article><h3>Issue investigation</h3><p>Reproduce issues, inspect logs and errors, implement fixes and test the affected flows.</p></article>
-                    <article><h3>AI-assisted development</h3><p>Use Codex and Claude for planning and implementation assistance. Review generated changes and test them before team PR review and release checks.</p></article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section muted-section" id="uses">
-            <div class="container two-column">
-                <div class="section-heading"><p class="eyebrow">Uses</p><h2>Tools I use in day-to-day delivery.</h2></div>
-                <div class="uses-grid">
-                    <article><h3>Frontend</h3><p>Nuxt, Vue.js, TypeScript, JavaScript and Tailwind CSS.</p></article>
-                    <article><h3>Backend</h3><p>NestJS, Node.js and REST APIs within the team's service architecture.</p></article>
-                    <article><h3>Data</h3><p>MySQL tables, schema changes and queries; PintailDB reporting queries; integration with existing Redis queues.</p></article>
-                    <article><h3>Testing &amp; monitoring</h3><p>Playwright, Sentry and Better Stack. Basic exposure to Prometheus and Grafana.</p></article>
-                    <article><h3>Delivery</h3><p>Fly.io deployments using existing CI/CD workflows, team PR review, Linear and Freshdesk.</p></article>
-                    <article><h3>AI-assisted workflow</h3><p>Codex and Claude, alongside code review, manual testing and automated checks.</p></article>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <p class="copyright">© 2026 Sathish P</p>
-            <div class="footer-links">
-                <a href="contact.html">Email</a>
-                <a class="footer-icon-link" href="https://github.com/sathish099" target="_blank" rel="noopener noreferrer" aria-label="Sathish P on GitHub">
-                    <i class="fa-brands fa-github" aria-hidden="true"></i>
-                </a>
-                <a class="footer-icon-link" href="https://www.linkedin.com/in/sathish-p-2030561bb" target="_blank" rel="noopener noreferrer" aria-label="Sathish P on LinkedIn">
-                    <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
-                </a>
-                <a class="footer-icon-link" href="https://x.com/Sathish_099" target="_blank" rel="noopener noreferrer" aria-label="Sathish P on X">
-                    <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const siteNav = document.querySelector('.site-nav');
-        const navLinks = [...siteNav.querySelectorAll('a')];
-        const sections = navLinks.map((link) => document.querySelector(link.getAttribute('href'))).filter(Boolean);
-
-        menuToggle.addEventListener('click', () => {
-            const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
-            menuToggle.setAttribute('aria-expanded', String(!isOpen));
-            siteNav.classList.toggle('is-open');
-        });
-
-        document.addEventListener('click', (event) => {
-            const clickedInsideMenu = siteNav.contains(event.target) || menuToggle.contains(event.target);
-
-            if (!clickedInsideMenu && siteNav.classList.contains('is-open')) {
-                menuToggle.setAttribute('aria-expanded', 'false');
-                siteNav.classList.remove('is-open');
-            }
-        });
-
-        document.addEventListener('keydown', (event) => {
-            if (event.key === 'Escape' && siteNav.classList.contains('is-open')) {
-                menuToggle.setAttribute('aria-expanded', 'false');
-                siteNav.classList.remove('is-open');
-                menuToggle.focus();
-            }
-        });
-
-        navLinks.forEach((link) => {
-            link.addEventListener('click', () => {
-                menuToggle.setAttribute('aria-expanded', 'false');
-                siteNav.classList.remove('is-open');
-            });
-        });
-
-        const setActiveNav = (id) => {
-            navLinks.forEach((link) => {
-                const isActive = link.getAttribute('href') === `#${id}`;
-                link.classList.toggle('active', isActive);
-                link.toggleAttribute('aria-current', isActive);
-            });
-        };
-
-        const activeNavObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    setActiveNav(entry.target.id);
-                }
-            });
-        }, { rootMargin: '-35% 0px -55% 0px' });
-
-        sections.forEach((section) => activeNavObserver.observe(section));
-
-        document.querySelector('.copyright').textContent = `© ${new Date().getFullYear()} Sathish P`;
-    </script>
-</body>
-</html>
+<body class="edition">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="paper">
+<header class="masthead" id="home">
+    <div class="edition-line"><span>Independent portfolio · Chennai, India</span><span>Engineering / Education / Everyday curiosity</span><button class="theme-switch" type="button" aria-pressed="false">Evening edition <span aria-hidden="true">◐</span></button></div>
+    <a class="wordmark" href="index.html">The Sathish <em>Journal</em><span class="masthead-star" aria-hidden="true">✳</span></a>
+    <div class="edition-sub"><span>A working record of building for the web.</span><span>Full-stack developer · Since 2022</span></div>
+    <nav class="paper-nav" aria-label="Primary navigation"><a href="#projects">Selected work</a><a href="#about">The developer</a><a href="#uses">Toolkit</a><a href="resume.html">Résumé ↗</a><a href="mailto:sathishdotdev@gmail.com">Get in touch ↗</a></nav>
+</header>
+<main id="main">
+<section class="front-page" aria-labelledby="headline">
+    <div class="lead-story"><p class="kicker"><span class="red-square" aria-hidden="true"></span> The lead story / Full-stack development</p><h1 id="headline">Thoughtful interfaces.<br>Useful systems.<br><em>Built to work.</em></h1><p class="standfirst">I'm Sathish, a full-stack developer connecting the student experience with the services behind it.</p><p class="lead-description">4+ years building education web applications with Nuxt, NestJS, TypeScript and MySQL. From a student's first course to the systems that support their progress.</p><a class="ink-button" href="#projects">Explore selected work <span aria-hidden="true">↘</span></a><a class="text-link" href="resume.html">Read my résumé ↗</a></div>
+    <aside class="portrait-story"><figure><img src="https://github.com/sathish099.png?size=800" alt="Portrait of Sathish P" width="460" height="490"><figcaption><span>01 / The developer</span><span>Chennai, IN</span></figcaption></figure><h2>Curious by nature.<br>Practical by habit.</h2><p>I work across frontend, APIs, databases and testing, with a healthy interest in how the whole thing fits together.</p></aside>
+    <aside class="news-rail" aria-label="At a glance"><p class="kicker">In this edition</p><a href="#projects"><span>01 / Product engineering</span><strong>A learning platform for 10,000 students.</strong><span class="rail-arrow" aria-hidden="true">↗</span></a><a href="#monitoring"><span>02 / Reliability &amp; AI</span><strong>When registrations fail, the team hears why.</strong><span class="rail-arrow" aria-hidden="true">↗</span></a><a href="#foundation"><span>03 / Work in progress</span><strong>Connecting donors to student progress.</strong><span class="rail-arrow" aria-hidden="true">↗</span></a><div class="rail-note"><span class="kicker">On my desk</span><p>Nuxt &amp; NestJS.<br>Code reviews.<br>One more test.</p></div></aside>
+</section>
+<div class="facts-strip" aria-label="Experience and platform scale"><p><strong>4+</strong><span>Years developing<br>web applications</span></p><p><strong>10k</strong><span>Students on the<br>LMS platform</span></p><p><strong>~3k</strong><span>Daily active<br>learners</span></p><p><strong>3 hrs</strong><span>Between automated<br>registration checks</span></p></div>
+<section class="work-section" id="projects" aria-labelledby="work-heading"><div class="section-bar"><div><p class="kicker">01 / Selected work</p><h2 id="work-heading">From the workbench.</h2></div><div class="filters" role="group" aria-label="Filter projects"><button type="button" data-filter="all" aria-pressed="true">All stories</button><button type="button" data-filter="product" aria-pressed="false">Products</button><button type="button" data-filter="automation" aria-pressed="false">Automation</button></div></div><p class="filter-status sr-only" aria-live="polite"></p>
+<div class="stories">
+<article class="story feature-story" data-category="product"><div class="story-art lms-art" aria-hidden="true"><span class="art-label">The learning journey</span><div class="course-diagram"><span>Discover</span><b>↘</b><span>Learn</span><b>↘</b><span>Practice</span><b>↘</b><span>Achieve</span></div><span class="art-footer">Student LMS / Product engineering</span></div><div class="story-content"><p class="kicker">01 / Production · LMES Academy</p><h3>One platform.<br>Many learning journeys.</h3><p>Built the student-facing LMS for courses, assignment uploads, quizzes, reports, profiles and certificate downloads. The platform serves approximately 10,000 students, including 3,000 daily active learners.</p><div class="tags"><span>Nuxt</span><span>NestJS</span><span>TypeScript</span><span>MySQL</span></div><details><summary>Inside the implementation <span aria-hidden="true">+</span></summary><p>Implemented APIs and database changes within the team's architecture. Integrated existing Redis queues for background processing, PintailDB reporting queries, and Cloudflare PDF rendering for certificates. Added Playwright tests using test data across student modules.</p></details></div></article>
+<article class="story" id="monitoring" data-category="automation"><div class="story-art monitor-art" aria-hidden="true"><span class="art-label">A signal, with context.</span><div class="signal"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="art-footer">Check → Retry → Explain → Alert</span></div><div class="story-content"><p class="kicker">02 / Automation &amp; AI integration</p><h3>Keeping an eye on<br>the registration flow.</h3><p>Built scheduled Playwright checks for workshop registrations, with clear Slack alerts so the marketing team can act when something breaks.</p><div class="tags"><span>Playwright</span><span>Cron</span><span>AI API</span><span>Slack</span></div><details><summary>Inside the implementation <span aria-hidden="true">+</span></summary><p>Checks run every three hours. Page-load waits and retries address false alerts; slow pages are reported separately. An AI API turns diagnostics into explanations and suggested steps. Original failure alerts are preserved if the AI service is unavailable.</p></details></div></article>
+<article class="story" id="foundation" data-category="product"><div class="story-art foundation-art" aria-hidden="true"><span class="art-label">Connected by purpose.</span><div class="mapping"><span>Donor</span><b>↔</b><span>Student</span></div><span class="art-footer">Track / Review / Approve</span></div><div class="story-content"><p class="kicker">03 / In development · LMES Academy</p><h3>A clearer view of<br>student progress.</h3><p>Developed frontend and backend features connecting student tracking, donor–student mapping, progress visibility and admin approvals.</p><div class="tags"><span>Full-stack development</span><span>Admin workflows</span></div><details><summary>Project status &amp; scope <span aria-hidden="true">+</span></summary><p>The foundation management platform is nearing completion and awaiting testing-team approval. Production adoption and outcomes are not yet established.</p></details></div></article>
+</div></section>
+<section class="developer-section" id="about"><div class="section-bar"><div><p class="kicker">02 / The developer</p><h2>A little context.</h2></div><span class="byline">Words &amp; work by Sathish P</span></div><div class="about-columns"><div><p class="dropcap">I build the parts people see and the services they depend on. Since September 2022, I've worked at LMES Academy as a Junior Full-Stack Developer, delivering student experiences, APIs, database changes and automated checks.</p><p>My approach is practical: understand the flow, reproduce the problem, make a focused change, and test it. I use Codex and Claude for development assistance, then review and validate the changes before team PR review.</p></div><blockquote>“Understand the flow.<br>Make it work.<br><em>Check it again.</em>”<cite>My working approach</cite></blockquote><div class="timeline"><p class="kicker">The short history</p><div><span>2022 — Present</span><h3>Junior Full-Stack Developer</h3><p>LMES Academy · Chennai</p></div><div><span>Feb — Aug 2022</span><h3>Technical Support Executive</h3><p>LMES Academy · Chennai</p></div><div><span>2017 — 2020</span><h3>Computer Science</h3><p>SIV College of Arts and Science</p></div><a class="text-link" href="resume.html">The complete résumé ↗</a></div></div></section>
+<section class="toolkit" id="uses"><div class="section-bar"><div><p class="kicker">03 / Toolkit</p><h2>Tools behind the work.</h2></div><span class="byline">Familiar tools. Considered choices.</span></div><div class="tool-columns"><article><span class="tool-number">/ 01</span><h3>The interface</h3><p>Nuxt · Vue.js<br>TypeScript · JavaScript<br>Tailwind CSS</p></article><article><span class="tool-number">/ 02</span><h3>The services</h3><p>NestJS · Node.js · REST APIs<br>MySQL · PintailDB reporting<br>Existing Redis queues</p></article><article><span class="tool-number">/ 03</span><h3>The confidence</h3><p>Playwright · Sentry<br>Better Stack · Fly.io<br>Existing CI/CD workflows</p></article><article><span class="tool-number">/ 04</span><h3>The workflow</h3><p>Codex · Claude<br>Code review · Manual testing<br>Linear · Freshdesk</p></article></div></section>
+<section class="contact-banner"><p class="kicker">The next chapter</p><h2>Have something<br><em>worth building?</em></h2><a href="mailto:sathishdotdev@gmail.com">Let's talk <span aria-hidden="true">↗</span></a><p>Interested in full-stack opportunities across frontend and backend.</p></section>
+</main><footer class="paper-footer"><span>© <span data-year>2026</span> Sathish P · Made with curiosity.</span><div><a href="https://github.com/sathish099">GitHub ↗</a><a href="https://www.linkedin.com/in/sathish-p-2030561bb">LinkedIn ↗</a><a href="resume.html">Résumé ↗</a><a href="#home">Back to top ↑</a></div></footer>
+</div></body></html>
