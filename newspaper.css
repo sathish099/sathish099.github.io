@@ -943,3 +943,97 @@
     margin:14mm
   }
 }
+
+/* Correspondence page */
+.edition .contact-shell {
+  padding: 65px 0 50px;
+}
+.edition .contact-card {
+  width: min(100% - 48px, 1080px);
+  grid-template-columns: 1.1fr 1fr;
+  gap: 65px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.contact-intro h1 {
+  font-size: clamp(42px, 4.5vw, 64px);
+  margin: 24px 0;
+}
+.contact-intro > p:not(.kicker):not(.standfirst) {
+  color: var(--muted);
+  font-size: 14px;
+}
+.contact-directory {
+  margin-top: 35px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+.contact-directory > a {
+  font: 20px Georgia, serif;
+  overflow-wrap: anywhere;
+}
+.contact-directory > div {
+  display: flex;
+  gap: 25px;
+  margin: 20px 0;
+  font: 11px 'Courier New', monospace;
+}
+.contact-postscript {
+  margin-top: 35px !important;
+  font: 10px 'Courier New', monospace !important;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.edition .contact-form {
+  border-left: 1px solid var(--line);
+  padding-left: 40px;
+  gap: 20px;
+}
+.edition .contact-form label {
+  font: 11px/1.5 'Courier New', monospace;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-weight: normal;
+  gap: 9px;
+}
+.edition .contact-form input,
+.edition .contact-form textarea {
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: var(--bg);
+  font: 15px/1.6 Arial, sans-serif;
+  color: var(--text);
+  padding: 12px;
+}
+.edition .contact-form textarea::placeholder {
+  color: var(--muted);
+}
+.edition .contact-form .ink-button {
+  border: 0;
+  justify-content: space-between;
+  margin-top: 0;
+}
+.edition .form-status {
+  color: var(--text);
+  font-size: 13px;
+}
+.contact-footer {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 22px 24px;
+  border-top: 4px double var(--text);
+  color: var(--muted);
+  font: 10px/1.7 'Courier New', monospace;
+}
+@media (max-width: 760px) {
+  .edition .contact-shell { padding-top: 35px; }
+  .edition .contact-card { grid-template-columns: 1fr; gap: 30px; }
+  .edition .contact-form {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    padding: 25px 0 0;
+  }
+}

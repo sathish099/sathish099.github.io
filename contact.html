@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Sathish P for full-stack development, LMS, dashboard, Nuxt, Vue, Node.js, and Express work.">
-    <meta name="theme-color" content="#0b0d10">
+    <meta name="description" content="Contact Sathish P for full-stack development, education applications, Nuxt, NestJS, TypeScript and MySQL work.">
+    <meta name="theme-color" content="#f2eee5">
     <meta property="og:title" content="Contact | Sathish P">
     <meta property="og:description" content="Send a portfolio inquiry to Sathish P.">
     <meta property="og:type" content="website">
@@ -13,7 +13,7 @@
     <meta property="og:site_name" content="Sathish P Portfolio">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Contact | Sathish P">
-    <meta name="twitter:description" content="Contact Sathish P for full-stack development, LMS, dashboard, Nuxt, Vue, Node.js, and Express work.">
+    <meta name="twitter:description" content="Contact Sathish P for full-stack development, education applications, Nuxt, NestJS, TypeScript and MySQL work.">
     <meta name="twitter:image" content="https://github.com/sathish099.png?size=800">
     <meta name="twitter:creator" content="@Sathish_099">
     <title>Contact | Sathish P</title>
@@ -22,6 +22,8 @@
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="newspaper.css">
+    <script src="newspaper.js" defer></script>
     <script>
         (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -31,34 +33,23 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
-<body class="contact-page">
+<body class="contact-page edition">
     <a class="skip-link" href="#contact">Skip to contact form</a>
 
-    <header class="site-header" aria-label="Contact navigation">
-        <div class="container nav-shell">
-            <a class="brand" href="index.html" aria-label="Back to portfolio">Sathish P</a>
-            <nav class="site-nav">
-                <a href="index.html">Portfolio</a>
-                <a href="resume.html">Resume</a>
-                <a class="footer-icon-link" href="https://github.com/sathish099" target="_blank" rel="noopener noreferrer" aria-label="Sathish P on GitHub">
-                    <i class="fa-brands fa-github" aria-hidden="true"></i>
-                </a>
-                <a class="footer-icon-link" href="https://x.com/Sathish_099" target="_blank" rel="noopener noreferrer" aria-label="Sathish P on X">
-                    <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
-                </a>
-            </nav>
-        </div>
-    </header>
-
+    <header class="resume-topbar"><a href="index.html">← The Sathish Journal</a><div><a href="resume.html">Résumé ↗</a><button class="theme-switch" type="button" aria-pressed="false">Evening edition ◐</button></div></header>
     <main id="contact" class="contact-shell">
         <section class="container contact-card">
-            <div class="section-heading">
-                <p class="eyebrow">Contact</p>
-                <h1>Send the role, brief, or problem.</h1>
-                <p>I read messages directly and reply from <a href="mailto:sathishdotdev@gmail.com">sathishdotdev@gmail.com</a>. You can also find me on <a href="https://x.com/Sathish_099" target="_blank" rel="noopener noreferrer">X</a>.</p>
+            <div class="contact-intro">
+                <p class="kicker">Correspondence / The next chapter</p>
+                <h1>Good things start<br>with a <em>conversation.</em></h1>
+                <p class="standfirst">Have a role, a project, or an interesting problem? I'd like to hear about it.</p>
+                <p>I'm a full-stack developer in Chennai, working with Nuxt, NestJS, TypeScript and MySQL. Tell me a little about what you're building and where I could help.</p>
+                <div class="contact-directory"><p class="kicker">Prefer a direct line?</p><a href="mailto:sathishdotdev@gmail.com">sathishdotdev@gmail.com ↗</a><div><a href="https://github.com/sathish099">GitHub ↗</a><a href="https://www.linkedin.com/in/sathish-p-2030561bb">LinkedIn ↗</a></div></div>
+                <p class="contact-postscript">Chennai, India · Full-stack development</p>
             </div>
 
             <form class="contact-form" id="contactForm">
+                <p class="kicker">A note to Sathish</p>
                 <label>
                     Name
                     <input type="text" name="from_name" autocomplete="name" required>
@@ -69,13 +60,14 @@
                 </label>
                 <label>
                     Message
-                    <textarea name="message" rows="5" required></textarea>
+                    <textarea name="message" rows="7" placeholder="A little context goes a long way…" required></textarea>
                 </label>
-                <button class="button primary" type="submit">Send message</button>
+                <button class="ink-button" type="submit">Send message <span aria-hidden="true">↗</span></button>
                 <p class="form-status" aria-live="polite"></p>
             </form>
         </section>
     </main>
+    <footer class="contact-footer">The Sathish Journal · <a href="index.html">Back to the front page ↑</a></footer>
 
     <script>
         const contactForm = document.querySelector('#contactForm');
