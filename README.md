@@ -20,7 +20,7 @@ Live site: https://sathish099.github.io
 
 ## Editorial Design
 
-The portfolio uses a newspaper-inspired layout in `newspaper.css`, layered over the existing shared styles. `newspaper.js` provides project filters, a persistent evening edition and resume printing. Project notes use native HTML details and remain accessible without JavaScript. The contact page keeps its existing design and behavior.
+The portfolio uses a newspaper-inspired layout in `newspaper.css`, layered over the existing shared styles. `newspaper.js` provides project filters, a persistent evening edition and resume printing. Project notes use native HTML details and remain accessible without JavaScript. The contact page shares the editorial design and preserves its EmailJS form behavior.
 
 ## Local Preview
 
